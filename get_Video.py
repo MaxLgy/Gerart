@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+import dartv2b as bot
+
 
 time = int(input("Temps en secondes : "))
 
@@ -18,23 +20,27 @@ frame_height = int(cap.get(4))
 # Define the codec and create VideoWriter object.The output is stored in 'outpy.avi' file.
 out = cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 30, (frame_width,frame_height))
 
-
+mybot = bot.DartV2()
 
 compte = 0
 
 while(compte<time*30):
-  ret, frame = cap.read()
+    ret, frame = cap.read()
 
-  if ret == True: 
-    
-    # Write the frame into the file 'output.avi'
-    out.write(frame)
+    if ret == True: 
+        
+        mybot.set_speed(60,60)
+        # Write the frame into the file 'output.avi'
+        out.write(frame)
 
-    # Display the resulting frame    
-    #cv2.imshow('frame',frame)
+        # Display the resulting frame    
+        #cv2.imshow('frame',frame)
 
-    # Press Q on keyboard to stop recording
-    compte+=1
+        # Press Q on keyboard to stop recording
+        compte+=1
+
+mybot.set_speed(0,0)
+mybot.end()
 
 # When everything done, release the video capture and video write objects
 cap.release()
