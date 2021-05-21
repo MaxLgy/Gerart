@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import dartv2b as bot
+import drivers.dartv2b_basis as bot
 
 
 time = int(input("Temps en secondes : "))
@@ -20,7 +20,7 @@ frame_height = int(cap.get(4))
 # Define the codec and create VideoWriter object.The output is stored in 'outpy.avi' file.
 out = cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 30, (frame_width,frame_height))
 
-mybot = bot.DartV2()
+mybot = bot.DartV2Basis()
 
 compte = 0
 
