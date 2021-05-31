@@ -1,0 +1,18 @@
+----- States
+Idle
+CheckForCommand
+GoToLocation
+----- Transitions
+Idle CheckForCommand go main.doCheckForCommand
+CheckForCommand Idle wait main.doWait
+CheckForCommand GoToLocation go main.doGoToLocation
+GoToLocation Idle wait main.doWait
+----- Events
+go
+wait
+---- Start State
+Idle
+---- Start Event
+go
+---- End State
+End
