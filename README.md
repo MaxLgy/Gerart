@@ -7,10 +7,10 @@ La seule faiblesse de Gerart étant les escaliers, l’utilisateur est malheureu
 Pour ce projet, nous avons réparti les tâches selon différents axes : la création/lecture d’une page html sur le serveur du robot, déplacement du Dart en fonction des odomètres et mapping de la zone étudiée et définition d’une échelle interprétable par le char.
 
 Ce projet vous est proposé par :
-Yohann GOURRET
-Katell LAGATTU
-Maxime LEGEAY
-Isaac-Andreï WITT
+- Yohann GOURRET
+- Katell LAGATTU
+- Maxime LEGEAY
+- Isaac-Andreï WITT
 
 Remerciement:
 Helene THOMAS, pour l’aide apportée en traitement du signal.
