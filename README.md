@@ -13,6 +13,6 @@ Ce projet vous est proposé par :
 - Isaac-Andreï WITT
 
 Remerciement:
-Helene THOMAS, pour l’aide apportée en traitement du signal.
-Fabrice LE BARS, pour l’encadrement du projet
-Benoit ZERR, pour le prêt de matériel
+- Helene THOMAS, pour l’aide apportée en traitement du signal.
+- Fabrice LE BARS, pour l’encadrement du projet
+- Benoit ZERR, pour le prêt de matériel
